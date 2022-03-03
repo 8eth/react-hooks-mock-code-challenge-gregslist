@@ -7,6 +7,7 @@ function ListingsContainer({listings}) {
       <ul className="cards">
         {listings.map((listing) => (
           <ListingCard 
+            key={listing.id}
             listing={listing}
           />
         ))}
